@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Branching Process</title>
+</head>
+<body>
+	<header>
+		<h1>Process to create, merge and delete branches</h1>
+	</header>
+
+	<section>
+		<ol>
+			<li>git branch [new-branch-name]</li>
+			<li>git checkout [just-created-branch-name]</li>
+			<li>Make the changes you need: <br>
+				<ul>
+					<li>git add --all</li>
+					<li>git commit -m "Put your commit here"</li>
+					<li>git push origin [branch-name]</li>
+				</ul>
+			</li>
+			<li>git checkout master</li>
+			<li>git merge [branch-to-merge-name]</li>
+			<li>git add --all</li>
+			<li>git commit -m "Commit you just merged the branch"</li>
+			<li>git push origin master</li>
+			<li>git branch -D [branch-name-to-delete]</li>
+		</ol>
+	</section>			
+
+	<footer>This branch will be deleted after push. But the previous branch were created with the same method and it's still alive ("contact-page" branch).</footer>
+</body>
+</html>
